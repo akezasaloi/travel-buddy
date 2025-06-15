@@ -8,54 +8,51 @@ body {
     --text-muted: #6C6A7F;
   }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 22px 48px 10px 48px;
-    border-bottom: 2px solid #e2d2e9;
+.navbar {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1vh 3vw;
+  gap: 2rem;
 }
-
-.header-left {
-    display: flex;
-    align-items: center;
-}
-
 .logo {
-    font-weight: bold;
-    font-size: 1.2em;
-    margin-right: 32px;
-    color:var(--main-color)
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: var(--main-color);
+  letter-spacing: 1px;
 }
-
-nav a {
-    margin-right: 18px;
-    text-decoration: none;
-    color: #222;
-    font-weight: 500;
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 4vw;
+  margin-left: 3vw;
 }
-
-nav a.active {
-    color: var(--main-color)
+.nav-links li a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  padding-bottom: 2px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-bottom 0.2s;
 }
-
-.header-right {
-    display: flex;
-    align-items: center;
+.nav-links li a.active,
+.nav-links li a:hover {
+  color: var(--main-color);
+  border-bottom: 2px solid var(--main-color);
 }
-
 .heart {
-    color: var(--main-color);
-    margin-right: 3px;
-    font-size: 1.2em;
+  position: absolute;
+  color: var(--main-color);
+  right: 10vh;
+  font-size: 1.2em;
 }
-
 #wishlist-link {
-    color: var(--main-color);
-    font-weight: 600;
-    text-decoration: none;
-    margin-right: 18px;
-    cursor: pointer;
+  color: var(--text-dark);
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 18px;
+  cursor: pointer;
 }
 
 .country-search-section {

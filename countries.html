@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Travel Buddy - Countries</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="countries.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" type="icon/image-x" href="https://w7.pngwing.com/pngs/580/13/png-transparent-package-tour-parva-tejarat-shargh-co-travel-tourism-tour-operator-travel-purple-violet-logo.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+ <nav class="navbar">
+        <div class="logo">Travel Buddy</div>
+        <ul class="nav-links">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="countries.html" class="active">Countries</a></li>
+            <li><a href="#" id="wishlist-link" class="heart"><span >&#10084;</span> Travel Wishlist</a></li>
+        </ul>
+    </nav>
+  <section class="country-search-section">
+    <div class="search-bar">
+      <span class="search-icon">&#x1F50D;</span>
+      <input type="text" id="country-search" placeholder="search desired destination">
+    </div>
+    <div class="continent">
+      <button class="region-btn active" data-region="Africa">Africa</button>
+      <button class="region-btn" data-region="Oceania">Oceania</button>
+      <button class="region-btn" data-region="North America">North America</button>
+      <button class="region-btn" data-region="South America">South America</button>
+      <button class="region-btn" data-region="Asia">Asia</button>
+      <button class="region-btn" data-region="Europe">Europe</button>
+    </div>
+  </section>
+
+  <main>
+    <div class="country-cards" id="country-cards">
+    </div>
+  </main>
+
+  <div id="wishlist-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal" id="close-modal">&times;</span>
+      <h3>My Wishlist</h3>
+      <ul id="wishlist-items"></ul>
+    </div>
+  </div>
+
+  <script src="countries.js"></script>
+</body>
+</html>

@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.error('Error fetching forecast:', error);
             });
     };
-window.onload.getWeather()
+// window.onload.getWeather()
     window.toggleTemperature = function() {
         useCelsius = !useCelsius;
         document.getElementById('temp-toggle').textContent = useCelsius ? '°C' : '°F';

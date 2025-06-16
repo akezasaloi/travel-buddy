@@ -16,6 +16,9 @@ body {
   padding: 1vh 3vw;
   gap: 2rem;
 }
+a{
+    text-decoration: none;
+}
 .logo {
   font-weight: bold;
   font-size: 1.3rem;
@@ -180,7 +183,7 @@ main {
     border: 2px solid var(--main-color);
     background: #fff;
     border-radius: 16px;
-    color: var(--main-color);
+
     font-weight: 500;
     font-size: 1em;
     cursor: pointer;
@@ -189,7 +192,7 @@ main {
 
 .explore-btn:hover {
     background: var(--main-color);
-    color: #fff;
+    color: #ffffff;
 }
 
 .modal {

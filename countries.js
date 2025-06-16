@@ -6,6 +6,7 @@ const wishlistModal = document.getElementById('wishlist-modal');
 const closeModal = document.getElementById('close-modal');
 const wishlistItems = document.getElementById('wishlist-items');
 
+
 let countries = [];
 let filteredCountries = [];
 let selectedRegion = 'Africa';
@@ -53,7 +54,7 @@ function showCountries() {
     card.innerHTML = `
      <img class="card-image" src="${country.flag}">
       <div class="country-name">${country.name}</div>
-      <span class="wishlist-heart${wishlist.find(w => w.code === country.code) ? ' active' : ''}" data-code="${country.code}">&#9825;</span>
+      <span class="wishlist-heart${wishlist.find(w => w.code === country.code) ? ' active' : ''}" data-code="${country.code}">&#x2764;</span>
       <button class="explore-btn">Explore</button>
     `;
     cardsContainer.appendChild(card);

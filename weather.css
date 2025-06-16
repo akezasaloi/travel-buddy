@@ -1,13 +1,29 @@
 body {
     background-color: white;
+    color:white;
     margin: 0;
     padding: 20px;
+    font-family: Plus Jakarta Sans;
+}
+:root {
+  --main-color: #7c3aed;
+  --text-dark: #22223b;
+  --text-muted: #6c6a7f;
 }
 
+#larr{
+    font-size: 200%;
+
+    margin-right: 20%;
+   
+}
+#larr a{
+    text-decoration: none;
+}
 #weather-container {
-    max-width: 600px;
+    max-width: 80vw;
     margin: 0 auto;
-    background: #d687fe;
+    background: var(--main-color);
     border-radius: 10px;
     padding: 20px;
 }
@@ -23,7 +39,7 @@ body {
 }
 
 button {
-    background-color: #B471D5;
+    background-color: var(--main-color);
     box-shadow: 0 2px 2px 0px rgb(137, 119, 119);
     color: white;
     border: none;
@@ -35,15 +51,17 @@ button {
 }
 
 button:hover {
-    background-color: #6D28D9;
+    background-color: var(--main-color);
 }
 
 #temp-toggle {
-    background-color: #B471D5;
+    background-color: #fff;
     margin-left: 10px;
+    color:var(--main-color);
 }
 
 .weather-header {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -82,8 +100,9 @@ button:hover {
 }
 
 #hourly-forecast h3 {
-    border-bottom: 1px solid #B471D5;
+    border-bottom: 1px solid var(--main-color);
     padding-bottom: 5px;
+
 }
 
 .hourly-container {
@@ -100,7 +119,7 @@ button:hover {
     min-width: 80px;
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 3px 4px 0 #B471D5;
+    box-shadow: 0 3px 4px 0 var(--main-color);
 }
 
 .hourly-icon {

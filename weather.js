@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 console.error('Error fetching forecast:', error);
             });
     };
-
+window.onload.getWeather()
     window.toggleTemperature = function() {
         useCelsius = !useCelsius;
         document.getElementById('temp-toggle').textContent = useCelsius ? '°C' : '°F';
@@ -73,11 +73,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const weatherHTML = `
             <div class="weather-header">
-                <h2>${cityName}, ${country}</h2>
+                <h2 style="color:white">${cityName}, ${country}</h2>
                 <img src="${iconUrl}" alt="${description}" class="weather-icon">
             </div>
             <div class="weather-details">
-                <p class="temperature">${temperature}</p>
+                <p class="temperature" style="color:white">${temperature}</p>
                 <p class="description">${description}</p>
                 <p>Humidity: ${data.main.humidity}%</p>
                 <p>Wind: ${data.wind.speed} m/s</p>

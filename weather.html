@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather condition</title>
     <link rel="stylesheet" href="weather.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" type="icon/image-x" href="https://w7.pngwing.com/pngs/580/13/png-transparent-package-tour-parva-tejarat-shargh-co-travel-tourism-tour-operator-travel-purple-violet-logo.png">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+     <a href="countries.html"><button id="back-button">← Back</button></a>
     <div id="weather-container">
         <div class="search">
             <input type="text" id="cityInput" placeholder="Enter a city">
@@ -16,10 +21,23 @@
             <br>
             <button id="temp-toggle" onclick="toggleTemperature()">°C</button>
         </div>
+
         <div id="temp-div"></div>
         <div id="weather-info"></div>
         <div id="hourly-forecast"></div>
     </div>
+
+    <!-- <div class="country-details">
+      <img id="flag" src="" alt="Flag" style="width: 100px;">
+      <h2 id="country-name"></h2>
+      <p><strong>Capital:</strong> <span id="capital"></span></p>
+      <p><strong>Region:</strong> <span id="region"></span></p>
+      <p><strong>Currency:</strong> <span id="currency"></span></p>
+      <p><strong>Language:</strong> <span id="language"></span></p>
+     
+
+    </div> -->
     <script src="weather.js"></script>
+    <script src="countries.js"></script>
 </body>
 </html>

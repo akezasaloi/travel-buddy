@@ -109,7 +109,7 @@ window.onclick = function(mywish) {
 function viewWishlistModal() {
   wishlistItems.innerHTML = wishlist.length === 0
     ? '<li>Your wishlist is empty.</li>'
-    : wishlist.map(item => `<li><img src="${item.flag}" alt="${item.name}"><span>${item.name}</span></li>`).join('');
+    : wishlist.map(item => `<li><img src="${item.flag}" ><span>${item.name}</span></li>`).join('');
 }
 
 fetchCountries();
